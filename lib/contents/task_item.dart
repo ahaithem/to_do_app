@@ -71,8 +71,8 @@ class _TaskItemState extends State<TaskItem> {
                   Text(
                     '${widget.task.title}',
                     style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
                       color: Colors.black,
                     ),
                   ),
@@ -81,7 +81,7 @@ class _TaskItemState extends State<TaskItem> {
                       '${widget.task.date!.toLocal().toString().split(' ')[0]}',
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.black54,
+                        color: Colors.black,
                       ),
                     ),
                   if (widget.task.time != null)

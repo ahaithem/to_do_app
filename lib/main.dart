@@ -96,7 +96,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('All Tasks'),
+        title: const Text(
+          'All Tasks',
+          style: TextStyle(
+              fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),
+        ),
         backgroundColor: Color(0xFF2C3E50),
       ),
       body: FutureBuilder<List<Task>>(
